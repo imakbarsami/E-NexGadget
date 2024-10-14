@@ -1,66 +1,131 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<body>
 
-## About Laravel
+<h1>E-NexGadget</h1>
+<p><strong>E-NexGadget</strong> is a fully-featured ecommerce platform developed using Laravel 10. It provides a seamless shopping experience with two distinct panels for administrators and customers. The platform is designed to sell electronic gadgets, with functionalities ranging from product browsing to order management. The project incorporates a user-friendly interface, Ajax-based interactions, and image processing.</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h2>Features</h2>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<h3>Admin Panel</h3>
+<ul>
+    <li><strong>Dashboard:</strong> Overview of orders, sales, and activities.</li>
+    <li><strong>Category Management:</strong> Create, edit, and delete categories.</li>
+    <li><strong>Subcategory Management:</strong> Manage subcategories under each category.</li>
+    <li><strong>Brand Management:</strong> Create and manage product brands.</li>
+    <li><strong>Product Management:</strong> Add, edit, and manage products.</li>
+    <li><strong>Product Ratings:</strong> View and manage customer product ratings.</li>
+    <li><strong>Shipping Management:</strong> Set shipping options and charges.</li>
+    <li><strong>Order Management:</strong> View and update customer orders.</li>
+    <li><strong>Discount Management:</strong> Create and manage discount coupons.</li>
+    <li><strong>User Management:</strong> Manage customer accounts and their details.</li>
+    <li><strong>Page Management:</strong> Manage static pages like About Us, Contact, etc.</li>
+</ul>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<h3>Customer Panel</h3>
 
-## Learning Laravel
+<h4>Home Page</h4>
+<ul>
+    <li>View all categories with their subcategories.</li>
+    <li>Display of categories along with the total number of products in each.</li>
+    <li>Browse the latest and featured products.</li>
+</ul>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<h4>Shop Page</h4>
+<ul>
+    <li>Product filtering by:
+        <ul>
+            <li>Latest products.</li>
+            <li>Price (high to low, low to high).</li>
+            <li>Category, Subcategory, Brand.</li>
+            <li>Price ranges.</li>
+        </ul>
+    </li>
+</ul>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<h4>Checkout Page</h4>
+<ul>
+    <li>Manage shipping address.</li>
+    <li>View order summary.</li>
+    <li>Apply discount coupons.</li>
+    <li>Select payment method (COD only).</li>
+    <li>Receive order confirmation via email (integrated with Mailtrap).</li>
+</ul>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<h4>Other Customer Features</h4>
+<ul>
+    <li><strong>Cart Page:</strong> Add, remove, and manage products in the cart.</li>
+    <li><strong>Wishlist:</strong> Save and manage favorite products.</li>
+    <li><strong>My Orders:</strong> View and track order history.</li>
+    <li><strong>Change Password:</strong> Secure password management.</li>
+    <li><strong>Forgot Password:</strong> Password recovery via email (integrated with Mailtrap).</li>
+</ul>
 
-## Laravel Sponsors
+<h2>Technology Stack</h2>
+<ul>
+    <li><strong>Framework:</strong> Laravel 10</li>
+    <li><strong>Frontend:</strong> Bootstrap</li>
+    <li><strong>AJAX:</strong> Used for dynamic and responsive interactions.</li>
+    <li><strong>Image Processing:</strong> Handled using <a href="https://image.intervention.io/">Intervention/Image</a>.</li>
+    <li><strong>Mailing:</strong> Implemented using <a href="https://mailtrap.io/">Mailtrap</a> for testing email functionality.</li>
+</ul>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+<h2>Installation</h2>
+<ol>
+    <li>Clone the repository:
+        <pre><code>git clone https://github.com/akbarsami22/E-NexGadget.git</code></pre>
+    </li>
+    <li>Navigate to the project directory:
+        <pre><code>cd E-NexGadget</code></pre>
+    </li>
+    <li>Install dependencies:
+        <pre><code>composer install</code></pre>
+    </li>
+    <li>Set up environment variables by copying <code>.env.example</code> to <code>.env</code> and updating the necessary database credentials and Mailtrap configuration:
+        <pre><code>cp .env.example .env</code></pre>
+    </li>
+    <li>Generate the application key:
+        <pre><code>php artisan key:generate</code></pre>
+    </li>
+    <li>You have two options for setting up the database:
+        <ul>
+            <li><strong>Option 1:</strong> Import the provided SQL file (<code>e-nexgadget.sql</code>) into your database.</li>
+            <li><strong>Option 2:</strong> Run the migrations to create the tables:
+                <pre><code>php artisan migrate --seed</code></pre>
+            </li>
+        </ul>
+    </li>
+    <li>Serve the application locally:
+        <pre><code>php artisan serve</code></pre>
+    </li>
+</ol>
 
-### Premium Partners
+<h2>Usage</h2>
+<p>Once the application is set up, you can access the following panels:</p>
+<ul>
+    <li><strong>Admin Panel:</strong> <code>http://localhost/admin</code></li>
+    <li><strong>Customer Panel (Home Page):</strong> <code>http://localhost</code></li>
+</ul>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+<h3>Credentials</h3>
+<ul>
+    <li><strong>Admin Login:</strong>
+        <ul>
+            <li>Email: <code>admin@gmail.com</code></li>
+            <li>Password: <code>admin</code></li>
+        </ul>
+    </li>
+    <li><strong>Customer Login:</strong>
+        <ul>
+            <li>Register a new account or use pre-seeded user data.</li>
+        </ul>
+    </li>
+</ul>
 
-## Contributing
+<h2>Contributing</h2>
+<p>Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.</p>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<h2>License</h2>
+<p>This project is open-source and available under the <a href="LICENSE">MIT License</a>.</p>
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+</body>
+</html>
