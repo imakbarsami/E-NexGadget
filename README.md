@@ -1,4 +1,3 @@
-
 <body>
 
 <h1>E-NexGadget</h1>
@@ -99,6 +98,17 @@
     </li>
 </ol>
 
+<h2>Create Admin User</h2>
+<p>To create an admin user, run the following commands in the terminal:</p>
+<pre><code>php artisan tinker
+$admin = new User();
+$admin->name='admin';
+$admin->email='admin@gmail.com';
+$admin->password=Hash::make('admin');
+$admin->role=2;
+$admin->save();
+</code></pre>
+
 <h2>Usage</h2>
 <p>Once the application is set up, you can access the following panels:</p>
 <ul>
@@ -128,4 +138,3 @@
 <p>This project is open-source and available under the <a href="LICENSE">MIT License</a>.</p>
 
 </body>
-</html>
