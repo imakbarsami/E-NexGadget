@@ -116,7 +116,7 @@
     </li>
     <li><strong>Customer Login:</strong>
         <ul>
-            <li>Register a new account or use pre-seeded user data.</li>
+            <li>Register a new account</li>
         </ul>
     </li>
 </ul>
