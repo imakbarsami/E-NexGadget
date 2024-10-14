@@ -99,15 +99,17 @@
 </ol>
 
 <h2>Create Admin User</h2>
+<p><strong>Note:</strong> Skip this step if you import the SQL file. Only follow these instructions if you create the database yourself and migrate the tables.</p>
 <p>To create an admin user, run the following commands in the terminal:</p>
 <pre><code>php artisan tinker
 $admin = new User();
-$admin->name='admin';
-$admin->email='admin@gmail.com';
-$admin->password=Hash::make('admin');
-$admin->role=2;
+$admin->name = 'admin';
+$admin->email = 'admin@gmail.com';
+$admin->password = Hash::make('admin');
+$admin->role = 2;
 $admin->save();
 </code></pre>
+
 
 <h2>Usage</h2>
 <p>Once the application is set up, you can access the following panels:</p>
