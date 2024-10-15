@@ -119,31 +119,19 @@
 </section>
 
 <section class="section-3" style="background-color: #001f3f;">
+    <style>
+        .cat-card {
+            display: flex;
+            height: 175px; /* Adjusted height */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+    </style>
     <div class="container">
         <div class="section-title">
-            <h1 style= "font-family: 'Bungee', cursive; color: rgb(240, 240, 243); text-shadow: 0 0 5px rgba(70, 70, 74, 0.8), 0 0 10px rgba(214, 214, 221, 0.6), 0 0 15px rgba(168, 168, 172, 0.4);  padding: 0.5rem;;font-weight: bold">Categories</h1>
+            <h1 style="font-family: 'Bungee', cursive; color: rgb(240, 240, 243); text-shadow: 0 0 5px rgba(70, 70, 74, 0.8), 0 0 10px rgba(214, 214, 221, 0.6), 0 0 15px rgba(168, 168, 172, 0.4); padding: 0.5rem; font-weight: bold;">Categories</h1>
         </div>
-        {{-- <div class="row pb-3">
-            @if (getCategories()->isNotEmpty())
-                @foreach (getCategories() as $category)
-                    <div class="col-lg-3">
-                        <a href="{{ route('front.shop', $category->slug) }}" class="cat-card">
-                            <div class="left">
-                                @if ($category->image != "")
-                                    <img src="{{ asset('upload/category/thumb/' . $category->image) }}" alt="" class="img-fluid">
-                                @endif
-                            </div>
-                            <div class="right">
-                                <div class="cat-data">
-                                    <h2>{{ $category->name }}</h2>
-                                    <p>{{ $category->products->count() }} Products</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                @endforeach
-            @endif
-        </div> --}}
         <div class="row pb-3">
             @if (getCategories()->isNotEmpty())
                 @foreach (getCategories() as $category)
@@ -151,15 +139,15 @@
                         <a href="{{ route('front.shop', $category->slug) }}" class="cat-card" style="text-decoration: none; color: black;">
                             <div class="left" style="flex: 0 0 50%; display: flex; align-items: center; justify-content: center;">
                                 @if ($category->image != "")
-                                    <img src="{{ asset('upload/category/thumb/' . $category->image) }}" alt="{{ $category->name }}" class="img-fluid" style="max-width: 100%; height: auto;">
+                                    <img src="{{ asset('upload/category/thumb/' . $category->image) }}" alt="" class="img-fluid">
                                 @endif
                             </div>
-                            <div class="right" style="flex: 0 0 50%; display: flex; align-items: center; justify-content: center;font-family: 'Bungee', cursive">
+                            <div class="right" style="flex: 0 0 50%; display: flex; align-items: center; justify-content: center; font-family: 'Bungee', cursive;">
                                 <div class="cat-data">
                                     <h2>{{$category->name}}</h2>
                                     <p>{{ $category->products->count() }} Products</p>
                                 </div>
-                            </div> 
+                            </div>
                         </a>
                     </div>
                 @endforeach
