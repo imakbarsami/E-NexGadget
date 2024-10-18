@@ -82,7 +82,7 @@ class ShopController extends Controller
 
         $sort=$request->get('sort');
 
-        $products=$products->paginate(6);
+        $products=$products->paginate(9);
 
         return view('front.shop', compact('categories', 'brands', 'products', 'categorySelected',
                     'subCategorySelected', 'brandArray', 'priceRangeArray','sort'));
