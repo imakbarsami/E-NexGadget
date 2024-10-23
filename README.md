@@ -133,6 +133,31 @@ $admin->save();
     </li>
 </ul>
 
+## Output
+![admin-1](https://github.com/user-attachments/assets/6ade97db-ecf2-4b3e-aa72-e7cd826729b4)
+
+<h4 align="center">Admin Dashboard </h4>
+
+![front-1](https://github.com/user-attachments/assets/9ba93de8-9045-4f6b-8b9d-0c8a46e607a9)
+
+<h4 align="center">Home Page </h4>
+
+![front-2](https://github.com/user-attachments/assets/cdbc7b31-7681-4645-b770-f42a50bd6b04)
+
+<h4 align="center">Shop Page </h4>
+
+![front-5](https://github.com/user-attachments/assets/aef62e6a-fefd-4d36-b255-8483043f3930)
+
+<h4 align="center">Profile Page </h4>
+
+![front-3](https://github.com/user-attachments/assets/d9ef7113-b9f2-4390-90db-807a0776f0e5)
+
+<h4 align="center">Cart Page </h4>
+
+![front-4](https://github.com/user-attachments/assets/ca3f35f8-76af-4438-ae5b-7afa3b85eeec)
+
+<h4 align="center">Checkout Page </h4>
+
 <h2>Contributing</h2>
 <p>Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.</p>
 
