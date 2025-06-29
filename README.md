@@ -134,27 +134,36 @@ $admin->save();
 </ul>
 
 ## Output
-![admin-1](https://github.com/user-attachments/assets/6ade97db-ecf2-4b3e-aa72-e7cd826729b4)
+
+!![dashboard](https://github.com/user-attachments/assets/8f7ceab5-d441-469c-8594-ec459ebe54e4)
 
 <h4 align="center">Admin Dashboard </h4>
 
-![front-1](https://github.com/user-attachments/assets/9ba93de8-9045-4f6b-8b9d-0c8a46e607a9)
+
+![home](https://github.com/user-attachments/assets/0fcedead-524b-4aef-a7a6-414d0882c1ae)
+
 
 <h4 align="center">Home Page </h4>
 
-![front-2](https://github.com/user-attachments/assets/cdbc7b31-7681-4645-b770-f42a50bd6b04)
+
+
+![shop](https://github.com/user-attachments/assets/e7b40e3c-906e-427e-871c-759d5be6241b)
 
 <h4 align="center">Shop Page </h4>
 
-![front-5](https://github.com/user-attachments/assets/aef62e6a-fefd-4d36-b255-8483043f3930)
+
+![profile](https://github.com/user-attachments/assets/3040bcee-071d-4e9c-a135-3110c168077c)
+
 
 <h4 align="center">Profile Page </h4>
 
-![front-3](https://github.com/user-attachments/assets/d9ef7113-b9f2-4390-90db-807a0776f0e5)
+
+![cart](https://github.com/user-attachments/assets/d58b090d-21c5-4b08-a72e-4571b486b647)
 
 <h4 align="center">Cart Page </h4>
 
-![front-4](https://github.com/user-attachments/assets/ca3f35f8-76af-4438-ae5b-7afa3b85eeec)
+![checkout](https://github.com/user-attachments/assets/163c4f6a-6c93-4fbd-a91a-81918c9b43c7)
+
 
 <h4 align="center">Checkout Page </h4>
 
